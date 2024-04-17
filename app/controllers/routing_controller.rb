@@ -1,4 +1,4 @@
-class Routing_controller < ApplicationController
+class RoutingController < ApplicationController
   def dynamic
     @num_dice = params.fetch("number_of_dice").to_i
 
