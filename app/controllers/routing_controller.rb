@@ -10,18 +10,14 @@ class RoutingController < ApplicationController
       die = rand(1..@sides)
 
       @rolls.push(die)
+    end
 
-      render({:template => "game_templates/dynamic_move"})
+    render({:template => "game_templates/dynamic"})
   end
 
-  erb(:flexible)
-  end
 
   def home
     render({:template => "game_templates/homepage"})
   end
 
-
-
-
-end
+end 
